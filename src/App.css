@@ -9,7 +9,8 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    -webkit-animation: App-logo-spin infinite 20s linear;
+            animation: App-logo-spin infinite 20s linear;
   }
 }
 
@@ -28,6 +29,15 @@
   color: #61dafb;
 }
 
+@-webkit-keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -36,3 +46,10 @@
     transform: rotate(360deg);
   }
 }
+
+
+
+.home_banner {position:relative;height:48.75rem;margin-bottom:2.25rem}
+.home_banner .banner_txt {position:absolute;left:3.125rem;bottom:3.125rem;z-index:10}
+.home_banner .banner_txt .tit {font-size:2.5rem}
+.home_banner .banner_txt p {margin-top:1.875rem;width:calc(100% - 3.125rem);font-size:1.5rem;line-height:2.125rem;display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp: 3;-webkit-box-orient: vertical}

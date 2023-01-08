@@ -1,18 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
-import {movieApi} from './axios';
+import Banner from './components/Banner.js';
 
 function App() {
-  const getTopRated = async () => {
-    const a = await movieApi.TopRated('movie')
-    console.log(a)
-  
-  }
-  
-  getTopRated()
+
   
   return (
     <div className="App">
+      <Banner></Banner>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
