@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Banner from './components/Banner.js';
+import ItemList from './components/ItemList.js';
 
 function App() {
 
@@ -8,6 +9,10 @@ function App() {
   return (
     <div className="App">
       <Banner></Banner>
+      <div class="item_container">
+      <ItemList></ItemList>
+      </div>
+      
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

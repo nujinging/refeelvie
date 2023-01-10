@@ -29,7 +29,7 @@ export default function App() {
         <>
             <Swiper pagination={true} modules={[Pagination]} className="mySwiper home_banner">
                 {movie.map(item => (
-                    <SwiperSlide className="banner" key={item.id} style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/${item.backdrop_path})` }}>
+                    <SwiperSlide className="item_card" key={item.id} style={{ backgroundImage: `url(https://image.tmdb.org/t/p/w1920_and_h800_multi_faces/${item.backdrop_path})` }}>
                         <div className="banner_txt">
                             <h2 className="tit"> {item.title} </h2>
                             <p> {item.overview}</p>
