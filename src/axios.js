@@ -9,7 +9,7 @@ const request = axios.create({
 
 });
 export const movieApi = {
-    nowPlaying: (type, now) => request.get(`${type}/${now}`),
+    nowPlaying: (type) => request.get(`movie/nowPlaying`),
     popular: (type) => request.get(`${type}/popular`),
     TopRated: (type) => request.get(`${type}/top_rated`),
 
