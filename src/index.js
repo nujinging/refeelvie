@@ -1,7 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Home from './components/Home.js';
+import App from './App.js';
+import MainLayout from './MainLayout.js';
+import Ganre from './components/Genre.js';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -10,7 +12,10 @@ root.render(
   <React.StrictMode>
     <Router>
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<App />} />
+          <Route path="/movie" element={<Ganre />} />
+        </Route>
       </Routes>
     </Router>
   </React.StrictMode>

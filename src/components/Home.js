@@ -32,7 +32,6 @@ function App() {
 
   return (
     <div className="container">
-      <Header></Header>
       <Banner></Banner>
       <div className="item_container">
         <div className="title">
