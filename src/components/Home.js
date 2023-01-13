@@ -1,9 +1,9 @@
-import Header from './components/Header.js';
-import Banner from './components/Banner.js';
-import ItemList from './components/ItemList.js';
-import { movieApi } from './axios';
+import Header from './/Header.js';
+import Banner from './/Banner.js';
+import ItemList from './/ItemList.js';
+import { movieApi } from './../axios';
 import { useState, useEffect } from 'react';
-import './App.css';
+import './../App.css';
 
 function App() {
   const [popularList, setPopularList] = useState([]);
